@@ -200,10 +200,14 @@ const updatemsg=()=>{
     if(amtval==="" || amtval<1){
         amtval = 1;
         amount.value = 1;
-    }else if(typeof(amtval)==="string"){
+        console.log(typeof(amtval));
+    }
+    else if(typeof(amtval)==="string"){
         amtval = 1;
         amount.value=1;
+        console.log(typeof(amtval));
     }
+    
     let fromcurr = document.querySelector(".from select");
     let tocurr = document.querySelector(".to select");
     // console.log(fromcurr.toLowerCase())
