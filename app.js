@@ -200,6 +200,9 @@ const updatemsg=()=>{
     if(amtval==="" || amtval<1){
         amtval = 1;
         amount.value = 1;
+    }else if(typeof(amtval)==="string"){
+        amtval = 1;
+        amount.value=1;
     }
     let fromcurr = document.querySelector(".from select");
     let tocurr = document.querySelector(".to select");
