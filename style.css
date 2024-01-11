@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(2,0,36);
+    background: rgb(3,0,0);
+    background: radial-gradient(circle, rgba(3,0,0,1) 0%, rgba(255,255,255,1) 0%, rgba(14,206,245,1) 100%);
+}
+h2{
+    text-align: center;
+    font-size: 5vmin;
+}
+.container{
+    min-height: 50vmin;
+    width: 60vmin;
+    background-color:white;
+    backdrop-filter:blur(1000px);
+    padding: 3vmin;
+    border-radius: 2vmin;
+    box-shadow:2vmin 2vmin 5vmin black;
+}
+
+form input, select, button{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 0.75vmin;
+}
+form{
+    margin: 2vmin 0;
+}
+.form p{
+    font-size: 1vmin;
+}
+form input{
+    border: 1px solid lightgray;
+    height: 6vmin;
+    padding-left: 1vmin;
+    font-size: 3vmin;
+    margin: 2vmin 0;
+}
+
+.dropdown{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dropdown i{
+    font-size: 3vmin;
+    margin-top: 1vmin;
+}
+.select-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 15vmin;
+    border-radius: 1vmin;
+    border: 1px solid lightgray;
+    margin-bottom: 2vmin;
+}
+.select-container img{
+    max-width: 5vmin;
+}
+.select-container select{
+    font-size: 2.5vmin;
+}
+
+.msg{
+    display: flex;
+    justify-content: center;
+    margin: 2vmin;
+    font-size: 3vmin;
+}
+
+form button{
+    height: 6vmin;
+    font-size: 2.5vmin;
+    cursor: pointer;
+    background-color: lightgray;
+    transition: all 0.3s ease-in-out;
+}
+form button:hover{
+    background-color: #222823;
+    transform: scale(1.03);
+    color: white;
+}
